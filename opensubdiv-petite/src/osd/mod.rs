@@ -39,8 +39,12 @@ pub use cpu_evaluator::*;
 pub mod cpu_vertex_buffer;
 pub use cpu_vertex_buffer::*;
 
+#[cfg(feature = "cuda")]
 pub mod cuda_vertex_buffer;
+#[cfg(feature = "cuda")]
 pub use cuda_vertex_buffer::*;
 
+#[cfg(feature = "cuda")]
 pub mod cuda_evaluator;
+#[cfg(feature = "cuda")]
 pub use cuda_evaluator::*;
