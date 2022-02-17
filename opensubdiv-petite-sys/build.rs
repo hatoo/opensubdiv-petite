@@ -25,6 +25,10 @@ pub fn main() {
         .define("NO_DOC", "1")
         .define("NO_OPENCL", "1")
         .define("NO_CLEW", "1")
+        .define("NO_OPENGL", "1")
+        .define("NO_GLEW", "1")
+        .define("NO_GLFW", "1")
+        .define("NO_GLFW_X11", "1")
         .define("NO_TBB", "1");
 
     #[cfg(target_os = "windows")]
